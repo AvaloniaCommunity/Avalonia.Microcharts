@@ -1,0 +1,22 @@
+<Window xmlns="https://github.com/avaloniaui"
+        MinWidth="800" MinHeight="800"
+        xmlns:microcharts="clr-namespace:Avalonia.Microcharts;assembly=Avalonia.Microcharts"
+        Title="Avalonia Microcharts Example"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Background="gray"
+        x:Class="Avalonia.Microcharts.Example.MainWindow">
+
+        <ItemsControl Items="{Binding Charts}" Margin="0, 0, 20, 20">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid Columns="3" Rows="2"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <microcharts:MicrochartControl Chart="{Binding}" Margin="10, 10, 10, 10"/>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+
+</Window>

@@ -5,9 +5,9 @@ A simple Avalonia only port of the [Microcharts](https://github.com/dotnet-ad/Mi
 ![](github/img/charts.png)
 
 **TODOs: (help wanted!)**
-- Make rendering of charts backend independent.
 - Extract styling information from `src/Avalonia.Microcharts/Layout/*` to `StyledProperties` on dedicated Controls (BarChartControl, LineChartControl, ...).
 - Provide (or bind to existing) values for Dark and Light themes.
+- maybe make rendering even more backend independent and don't use skia directly.
 
 
 **Contribute:**
